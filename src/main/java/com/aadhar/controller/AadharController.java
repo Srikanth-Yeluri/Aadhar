@@ -35,7 +35,6 @@ import com.aadhar.service.AadharService;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
 @RestController
 @RequestMapping("/aadhar")
 //@EnableTransactionManagement
@@ -170,6 +169,11 @@ public class AadharController {
 		}
 
 		return ip;
+	}
+
+	@GetMapping("/test")
+	public String testApp(){
+		return "Application is working";
 	}
 
 }
